@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zyaco foods</title>
+    <title>Visa V</title>
     <!--GOOGLE FONTS LINKS-->
    <link
 rel="stylesheet"
@@ -21,6 +21,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     <link rel="stylesheet" href="CSS/currentHero.css">
     <link rel="stylesheet" href="CSS/featured-products.css">
     <link rel="stylesheet" href="CSS/current-featured.css">
+    <link rel="stylesheet" href="CSS/moreStyle-current.css">
 
 </head>
 <body>
@@ -141,236 +142,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <main>
 
 
-<!--CURRENT HERO SECTION-->
-
-
-<section class="hero" id="hero">
-
-    <div class="hero-slider" id="heroSlider">
-
-        <!-- SLIDE 1 -->
-        <article class="hero-slide active">
-
-            <img
-                src="images/beans2.jpg"
-                alt="Premium packaged rice"
-                class="hero-image">
-
-            <div class="hero-overlay"></div>
-
-            <div class="hero-content">
-
-                <span class="hero-eyebrow">
-                    QUALITY FOOD PRODUCTS
-                </span>
-
-                <h1>
-                    Quality Food.
-                    <span>Better Living.</span>
-                </h1>
-
-                <p>
-                    Discover quality food products carefully selected
-                    for your family and everyday needs.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="shop.html" class="btn btn-primary">
-                        Shop Now
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-
-                    <a href="products.html" class="btn btn-secondary">
-                        Explore Products
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- SLIDE 2 -->
-        <article class="hero-slide">
-
-            <img
-                src="images/zyacoimg (8).jpeg"
-                alt="Fresh vegetables"
-                class="hero-image">
-
-            <div class="hero-overlay"></div>
-
-            <div class="hero-content">
-
-                <span class="hero-eyebrow">
-                    FRESH &amp; QUALITY
-                </span>
-
-                <h2>
-                    Fresh Products
-                    <span>For Your Family.</span>
-                </h2>
-
-                <p>
-                    Quality ingredients sourced with care and delivered
-                    with reliability.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="shop.html" class="btn btn-primary">
-                        Shop Fresh
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- SLIDE 3 -->
-        <article class="hero-slide">
-
-            <img
-                src="images/cooking-oil.jpeg"
-                alt="Rice field" class="hero-image">
-
-            <div class="hero-overlay"></div>
-
-            <div class="hero-content">
-
-                <span class="hero-eyebrow">
-                    FROM FARM TO TABLE
-                </span>
-
-                <h2>
-                    Naturally
-                    <span>Better.</span>
-                </h2>
-
-                <p>
-                    Bringing quality agricultural products closer
-                    to your home.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="shop.html" class="btn btn-primary">
-                        Shop Products
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-        <!-- SLIDE 4 -->
-        <article class="hero-slide">
-
-            <img
-                src="images/white-jasmine-rice-wooden-bowl-with-paddy-rice-isolated-white-background_252965-471.avif"
-                alt="Premium jasmine rice"
-                class="hero-image">
-
-            <div class="hero-overlay"></div>
-
-            <div class="hero-content">
-
-                <span class="hero-eyebrow">
-                    PREMIUM SELECTION
-                </span>
-
-                <h2>
-                    Good Food
-                    <span>Starts Here.</span>
-                </h2>
-
-                <p>
-                    Shop our growing selection of quality food products.
-                </p>
-
-                <div class="hero-buttons">
-
-                    <a href="shop.html" class="btn btn-primary">
-                        Shop Now
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-        </article>
-
-    </div>
-
-
-    <!-- SLIDER CONTROLS -->
-    <div class="hero-controls">
-
-        <button
-            class="hero-arrow hero-prev"
-            id="heroPrev"
-            type="button"
-            aria-label="Previous slide">
-
-            <i class="fas fa-chevron-left"></i>
-
-        </button>
-
-
-        <div
-            class="hero-dots"
-            id="heroDots"
-            aria-label="Hero slide navigation">
-
-            <button
-                class="hero-dot active"
-                type="button"
-                aria-label="Go to slide 1">
-            </button>
-
-            <button
-                class="hero-dot"
-                type="button"
-                aria-label="Go to slide 2">
-            </button>
-
-            <button
-                class="hero-dot"
-                type="button"
-                aria-label="Go to slide 3">
-            </button>
-
-            <button
-                class="hero-dot"
-                type="button"
-                aria-label="Go to slide 4">
-            </button>
-
-        </div>
-
-
-        <button
-            class="hero-arrow hero-next"
-            id="heroNext"
-            type="button"
-            aria-label="Next slide">
-
-            <i class="fas fa-chevron-right"></i>
-
-        </button>
-
-    </div>
-
-</section>
    
 
 
@@ -393,7 +164,7 @@ FEATURED PRODUCTS
             </span>
 
             <h2>
-                Featured Products
+                Featured <span class="fichad-product">Products</span>
             </h2>
 
             <p>
@@ -500,9 +271,9 @@ FEATURED PRODUCTS
                         class="add-to-cart"
                         type="button"
                         data-product-id="cooking-oil-2l"
-                        aria-label="Add Cooking Oil 2L to cart">
+                        aria-label="Add Cooking Oil 2L to cart" title="Add to Card">
 
-                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-shopping-cart" title="Add to Card"></i>
 
                         <span>Add to Cart</span>
 
@@ -600,7 +371,7 @@ FEATURED PRODUCTS
                         class="add-to-cart"
                         type="button"
                         data-product-id="premium-rice-family-2kg"
-                        aria-label="Add Premium Rice Family Pack to cart">
+                        aria-label="Add Premium Rice Family Pack to cart" title="Add to Card">
 
                         <i class="fas fa-shopping-cart"></i>
 
@@ -1134,6 +905,83 @@ FEATURED PRODUCTS
 
 </div>
 
+
+</section>
+
+<!--==================================
+        PROMOTIONAL CAMPAIGN
+===================================-->
+
+<section class="promo-section">
+
+    <div class="container">
+
+        <div class="promo-banner">
+
+            <div class="promo-banner-image">
+
+                <img
+                    src="images/zyacoimg (11).jpeg"
+                    alt="Zyaco Foods special promotion"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <div class="promo-content">
+
+                <span class="promo-label">
+                    Limited Time Offer
+                </span>
+
+
+                <h2>
+                    Better Food.
+                    <br>
+                    <span class="better-value">Better Value.</span>
+                </h2>
+
+
+                <p>
+                    Discover selected Zyaco Foods products at
+                    exceptional prices. Shop quality essentials
+                    for your home or business while the offer lasts.
+                </p>
+
+
+                <div class="promo-actions">
+
+                    <a href="#" class="promo-primary">
+                        Shop the Offer
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+
+                    <a href="#" class="promo-secondary">
+                        View All Deals
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="promo-offer">
+
+                <strong>
+                    SAVE
+                </strong>
+
+                <span>
+                    Today
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </section>
 
