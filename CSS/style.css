@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+:root{
+    --body-bg:#fff;
+    --galaxy-bg:#CC5858;
+    --babbage-bg:#ffae00;
+    --btn-padding:10px 5px;
+}
+
+body{
+    background-color: #fff;
+}
+
+/*====================================
+HERO
+====================================*/
+
+.hero{
+
+    width:100%;
+    height:82vh;
+
+    overflow:hidden;
+    position:relative;
+
+    background:#ffffff;
+}
+
+
+/* Slider */
+
+.hero-slider{
+
+    width:400%;
+    height:100%;
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+
+    animation:heroSlider 18s infinite ease-in-out;
+    background-color: #ffffff;
+
+}
+
+
+/* Individual Slides */
+
+.slide{
+
+    position:relative;
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+}
+
+
+.slide img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:contain;
+
+    display:block;
+
+    transform:scale(1);
+
+    animation:zoomImage 6s linear infinite;
+
+}
+
+
+/* Dark Overlay */
+
+.slide::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+        rgba(0,0,0,.15),
+
+        rgba(0,0,0,.45)
+
+    );
+
+    z-index:1;
+
+}
+
+
+/* Premium Glow */
+
+.slide::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:50%;
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.25),
+
+        transparent
+
+    );
+
+    transform:skewX(-25deg);
+
+    animation:shine 5s infinite;
+
+    z-index:2;
+
+}
+
+
+/*====================================
+Animations
+====================================*/
+
+@keyframes heroSlider{
+
+    0%,25%{
+
+        transform:translateX(0);
+
+    }
+
+    33%,58%{
+
+        transform:translateX(-33.333%);
+
+    }
+
+    66%,91%{
+
+        transform:translateX(-66.666%);
+
+    }
+
+    100%{
+
+        transform:translateX(0);
+
+    }
+
+}
+
+
+@keyframes zoomImage{
+
+    from{
+
+        transform:scale(1);
+
+    }
+
+    to{
+
+        transform:scale(1.08);
+
+    }
+
+}
+
+
+@keyframes shine{
+
+    from{
+
+        left:-120%;
+
+    }
+
+    to{
+
+        left:140%;
+
+    }
+
+}
+
+
+/*====================================
+Responsive
+====================================*/
+
+@media(max-width:992px){
+
+.hero{
+
+height:70vh;
+
+}
+
+}
+
+
+@media(max-width:768px){
+
+.hero{
+
+height:58vh;
+
+}
+
+}
+
+
+@media(max-width:500px){
+
+.hero{
+
+height:45vh;
+
+}
+
+}

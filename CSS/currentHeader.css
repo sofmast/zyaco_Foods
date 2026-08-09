@@ -1,0 +1,539 @@
+/* =========================================
+   SITE HEADER
+========================================= */
+
+.site-header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    z-index: 1000;
+
+    background: rgba(255,255,255,.96);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(0,0,0,.06);
+
+    transition:
+        box-shadow .3s ease,
+        background .3s ease;
+
+}
+
+
+/* =========================================
+   HEADER CONTAINER
+========================================= */
+
+.header-container {
+
+    width: min(94%, 1400px);
+
+    min-height: 78px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    flex-shrink: 0;
+
+}
+
+
+.brand-logo {
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+}
+
+
+.brand-logo img {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+.brand-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.brand-name {
+
+    color: #222;
+
+    font-size: 17px;
+
+    font-weight: 800;
+
+    letter-spacing: .5px;
+
+}
+
+
+.brand-tagline {
+
+    color: #888;
+
+    font-size: 9px;
+
+    margin-top: 2px;
+
+    letter-spacing: .5px;
+
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+.main-navigation {
+
+    margin-left: auto;
+
+}
+
+
+.nav-list {
+
+    list-style: none;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.nav-link {
+
+    position: relative;
+
+    display: block;
+
+    padding: 10px 15px;
+
+    color: #333;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: color .25s ease;
+
+}
+
+
+.nav-link::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 15px;
+    right: 15px;
+
+    bottom: 3px;
+
+    height: 2px;
+
+    background: #e98d16;
+
+    transform: scaleX(0);
+
+    transform-origin: center;
+
+    transition: transform .25s ease;
+
+}
+
+
+.nav-link:hover,
+.nav-link.active {
+
+    color: #e98d16;
+
+}
+
+
+.nav-link:hover::after,
+.nav-link.active::after {
+
+    transform: scaleX(1);
+
+}
+
+
+/* =========================================
+   HEADER ACTIONS
+========================================= */
+
+.header-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.header-action {
+
+    position: relative;
+
+    width: 40px;
+    height: 40px;
+
+    display: grid;
+
+    place-items: center;
+
+    border: none;
+
+    background: transparent;
+
+    color: #333;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        transform .25s ease;
+
+}
+
+
+.header-action:hover {
+
+    background: #e98d16;
+
+    color: #fff;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================
+   CART COUNT
+========================================= */
+
+.cart-count {
+
+    position: absolute;
+
+    top: -2px;
+    right: -2px;
+
+    min-width: 17px;
+    height: 17px;
+
+    padding: 0 4px;
+
+    display: grid;
+    place-items: center;
+
+    background: #e98d16;
+
+    color: #fff;
+
+    border-radius: 50%;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    border: 2px solid #fff;
+
+}
+
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.menu-toggle {
+
+    width: 42px;
+    height: 42px;
+
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    border: none;
+
+    background: #f6f6f6;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+}
+
+
+.menu-toggle span {
+
+    display: block;
+
+    width: 20px;
+    height: 2px;
+
+    background: #333;
+
+    border-radius: 10px;
+
+    transition:
+        transform .3s ease,
+        opacity .3s ease;
+
+}
+
+
+/* =========================================
+   MOBILE MENU OPEN STATE
+========================================= */
+
+.menu-toggle.active span:nth-child(1) {
+
+    transform: translateY(7px) rotate(45deg);
+
+}
+
+
+.menu-toggle.active span:nth-child(2) {
+
+    opacity: 0;
+
+}
+
+
+.menu-toggle.active span:nth-child(3) {
+
+    transform: translateY(-7px) rotate(-45deg);
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 950px) {
+
+    .main-navigation {
+
+        position: fixed;
+
+        top: 78px;
+        left: 0;
+
+        width: 100%;
+
+        background: #fff;
+
+        border-bottom: 1px solid #eee;
+
+        box-shadow: 0 15px 35px rgba(0,0,0,.08);
+
+        transform: translateY(-120%);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transition:
+            transform .35s ease,
+            opacity .3s ease,
+            visibility .3s ease;
+
+    }
+
+
+    .main-navigation.active {
+
+        transform: translateY(0);
+
+        opacity: 1;
+
+        visibility: visible;
+
+    }
+
+
+    .nav-list {
+
+        width: 100%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        padding: 12px 5% 18px;
+
+    }
+
+
+    .nav-item {
+
+        width: 100%;
+
+    }
+
+
+    .nav-link {
+
+        padding: 15px;
+
+        border-radius: 8px;
+
+    }
+
+
+    .nav-link:hover {
+
+        background: #f8f8f8;
+
+    }
+
+
+    .nav-link::after {
+
+        display: none;
+
+    }
+
+
+    .menu-toggle {
+
+        display: flex;
+
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+
+    .header-container {
+
+        min-height: 68px;
+
+        width: 92%;
+
+        gap: 10px;
+
+    }
+
+
+    .main-navigation {
+
+        top: 68px;
+
+    }
+
+
+    .brand-logo {
+
+        width: 40px;
+        height: 40px;
+
+    }
+
+
+    .brand-name {
+
+        font-size: 14px;
+
+    }
+
+
+    .brand-tagline {
+
+        font-size: 8px;
+
+    }
+
+
+    .search-btn,
+    .account-btn {
+
+        display: none;
+
+    }
+
+
+    .header-actions {
+
+        gap: 3px;
+
+    }
+
+}
