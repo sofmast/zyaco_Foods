@@ -68,7 +68,7 @@ display: inline-block;
 
 margin-bottom: 12px;
 
-color: #e98d16;
+color: #CC5858;
 
 font-size: 12px;
 
@@ -112,6 +112,8 @@ line-height: 1.7;
 
 }
 
+
+
 /* =========================================================
 VIEW ALL LINK
 ========================================================= */
@@ -126,7 +128,7 @@ gap: 9px;
 
 flex-shrink: 0;
 
-color: #222;
+color: #4e4e4e;
 
 text-decoration: none;
 
@@ -155,7 +157,7 @@ transition: transform .25s ease;
 
 .view-all-products:hover {
 
-color: #e98d16;
+color: #279662;
 
 gap: 13px;
 
@@ -180,11 +182,15 @@ PRODUCT GRID
 display: grid;
 
 grid-template-columns:
-    repeat(4, minmax(0, 1fr));
+    repeat(4, minmax(200, 1fr));
 
 gap: 24px;
 
 
+}
+.fichad-product{
+    color: #cc8658;
+    font-size: inherit;
 }
 
 /* =========================================================
