@@ -9,973 +9,408 @@
 rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Roboto:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
     <link rel="stylesheet" href="CSS/global.css">
-    <link rel="stylesheet" href="CSS/currentHeader.css">
-    <link rel="stylesheet" href="CSS/currentHero.css">
+    <link rel="stylesheet" href="CSS/header.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/featured-products.css">
-    <link rel="stylesheet" href="CSS/current-featured.css">
-    <link rel="stylesheet" href="CSS/moreStyle-current.css">
-
 </head>
 <body>
-<header class="site-header" id="siteHeader">
-
-    <div class="header-container">
-
-        <!-- LOGO -->
-        <a href="index.html" class="brand" aria-label="Zyaco Foods Home">
-
-            <div class="brand-logo">
-                <img src="images/logo.jpeg" alt="Zyaco Foods logo">
+    <header class="header">
+        <div id="leftHeader" class="left-header">
+            <div>
+                <a href="index.html"><img src="images/logo.jpeg" alt="logo" class="logo" width="50"></a>
             </div>
-
-            <div class="brand-text">
-                <span class="brand-name">ZYACO FOODS</span>
-                <span class="brand-tagline">Nourishing Lives Everyday</span>
+            <div id="branddiv">
+                <h3>Zyaco Foods</h3>
             </div>
+            <div id="searchDiv">
+                <input type="search" class="search" placeholder="Search me">
+            </div>
+        </div>
+        <!--Righ part of header-->
 
-        </a>
+        <div id="rightHeader" class="right-header">
+            <ul class="nav">
+          <li class="list">
+            <a href="index.html">
+
+                Home</a>
+          </li>
+
+           <li class="list">
+            <a href="index.html">Shop</a>
+          </li>
 
 
-        <!-- DESKTOP / MOBILE NAVIGATION -->
-        <nav class="main-navigation" id="mainNavigation" aria-label="Main navigation">
 
-            <ul class="nav-list">
+           <li class="list">
+            <a href="current.html">products</a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link active">
-                        Home
-                    </a>
-                </li>
+           <li class="list">
+            <a href="index.html">Contact</a>
+          </li>
 
-                <li class="nav-item">
-                    <a href="shop.html" class="nav-link">
-                        Shop
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="products.html" class="nav-link">
-                        Products
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">
-                        Contact
-                    </a>
-                </li>
-
+            <li class="list">
+            <a href="index.html">
+                <i class="fas fa-shopping-cart"></i></a>
+          </li>
             </ul>
 
-        </nav>
+        </div>
+    </header>
+<main>
 
+<!-- =====================================
+HERO SECTION
+====================================== -->
+<section class="hero">
 
-        <!-- HEADER ACTIONS -->
-        <div class="header-actions">
+    <div class="hero-slider">
 
-            <!-- SEARCH -->
-            <button
-                class="header-action search-btn"
-                type="button"
-                aria-label="Search products"
-                title="Search">
-                <i class="fas fa-search"></i>
-            </button>
+        <div class="slide active">
+            <img src="images/rice500g.jpeg" alt="">
+        </div>
 
+        <div class="slide">
+            <img src="images/cabbage1.webp" alt="">
+        </div>
 
-            <!-- ACCOUNT -->
-            <a
-                href="account.html"
-                class="header-action account-btn"
-                aria-label="My account"
-                title="My account">
-                <i class="fas fa-user"></i>
-            </a>
+        <div class="slide">
+        <img src="images/yellow-paddy-field-swaying-over-sunset-day-time-asia-raw-short-grain-rice-crop-stalk-ears-detals-organic-agriculture-farming-167538982.webp" alt="rice">
+        </div>
 
-
-            <!-- CART -->
-            <a
-                href="cart.html"
-                class="header-action cart-btn"
-                aria-label="Shopping cart"
-                title="Shopping cart">
-
-                <i class="fas fa-shopping-cart"></i>
-
-                <span
-                    class="cart-count"
-                    id="cartCount">
-                    0
-                </span>
-
-            </a>
-
-
-            <!-- MOBILE MENU -->
-            <button
-                class="menu-toggle"
-                id="menuToggle"
-                type="button"
-                aria-label="Open navigation menu"
-                aria-expanded="false"
-                aria-controls="mainNavigation">
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </button>
-
+        <div class="slide">
+            <img src="images/white-jasmine-rice-wooden-bowl-with-paddy-rice-isolated-white-background_252965-471.avif" alt="">
         </div>
 
     </div>
 
-</header>
-<main>
+</section>
 
-
-   
-
-
+    <!-- =====================================
+Featured Products
+====================================== -->
 
 <!--====================================
 FEATURED PRODUCTS
 =====================================-->
 
-<section class="featured-products" id="featuredProducts">
+<section class="featured">
 
-<div class="featured-container">
+    <div class="section-title">
 
-    <!-- SECTION HEADER -->
-    <div class="section-heading">
+        <h2>Featured Products</h2>
 
-        <div class="section-heading-content">
+        <p>Handpicked products you'll love.</p>
 
-            <span class="section-eyebrow">
-                OUR SELECTION
-            </span>
+    </div>
 
-            <h2>
-                Featured <span class="fichad-product">Products</span>
-            </h2>
+    <div class="featured-grid">
 
-            <p>
-                Discover some of our most popular products,
-                carefully selected for quality and value.
-            </p>
+        <!-- Product -->
+
+        <div class="product-card">
+
+            <span class="badge">-20%</span>
+
+            <div class="product-image">
+
+                <img src="images/cooking-oil.jpeg" alt="">
+
+            </div>
+
+            <div class="product-content">
+
+                <span class="category">Cooking Oil</span>
+
+                <h3>Cooking Oil 2ltr</h3>
+
+                <div class="rating">
+
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+
+                    <span>(214)</span>
+
+                </div>
+
+                <div class="price">
+
+                    <span class="new-price">K100</span>
+
+                    <span class="old-price">K120</span>
+
+                </div>
+
+                <button class="cart-btn">
+
+                    <i class="fas fa-shopping-cart"></i>
+
+                    Add to Cart
+
+                </button>
+
+            </div>
 
         </div>
 
-        <a href="shop.html" class="view-all-products">
-            View All Products
-            <i class="fas fa-arrow-right"></i>
-        </a>
-
-    </div>
 
 
-    <!-- PRODUCT GRID -->
-    <div class="featured-grid">
+        <!-- Product -->
 
+        <div class="product-card">
 
-        <!-- PRODUCT 1 -->
-        <article class="product-card">
+            <span class="badge">NEW</span>
 
-            <div class="product-media">
+            <div class="product-image">
 
-                <span class="product-badge sale">
-                    -20%
-                </span>
-
-                <button
-                    class="product-wishlist"
-                    type="button"
-                    aria-label="Add Cooking Oil 2L to wishlist">
-
-                    <i class="far fa-heart"></i>
-
-                </button>
-
-                <a
-                    href="product-details.html"
-                    class="product-image">
-
-                    <img
-                        src="images/cooking-oil.jpeg"
-                        alt="Cooking Oil 2 litre"
-                        loading="lazy">
-
-                </a>
+                <img src="images/zyacoimg (6).jpeg" alt="">
 
             </div>
-
 
             <div class="product-content">
 
-                <span class="product-category">
-                    Cooking Oil
-                </span>
+                <span class="category">Zyaco Foods</span>
 
-                <a
-                    href="product-details.html"
-                    class="product-name">
+                <h3>Premium Rice Family pack 2Kg</h3>
 
-                    Cooking Oil 2L
+                <div class="rating">
 
-                </a>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
 
-
-                <div class="product-rating">
-
-                    <div class="stars" aria-label="4.5 out of 5 stars">
-
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-
-                    </div>
-
-                    <span class="review-count">
-                        214
-                    </span>
+                    <span>(96)</span>
 
                 </div>
 
+                <div class="price">
 
-                <div class="product-footer">
+                    <span class="new-price">$120</span>
 
-                    <div class="product-price">
-
-                        <span class="current-price">
-                            K100
-                        </span>
-
-                        <span class="previous-price">
-                            K120
-                        </span>
-
-                    </div>
-
-
-                    <button
-                        class="add-to-cart"
-                        type="button"
-                        data-product-id="cooking-oil-2l"
-                        aria-label="Add Cooking Oil 2L to cart" title="Add to Card">
-
-                        <i class="fas fa-shopping-cart" title="Add to Card"></i>
-
-                        <span>Add to Cart</span>
-
-                    </button>
+                    <span class="old-price">$145</span>
 
                 </div>
 
-            </div>
+                <button class="cart-btn">
 
-        </article>
+                    <i class="fas fa-shopping-cart"></i>
 
-
-        <!-- PRODUCT 2 -->
-        <article class="product-card">
-
-            <div class="product-media">
-
-                <span class="product-badge new">
-                    NEW
-                </span>
-
-                <button
-                    class="product-wishlist"
-                    type="button"
-                    aria-label="Add Premium Rice Family Pack to wishlist">
-
-                    <i class="far fa-heart"></i>
+                    Add to Cart
 
                 </button>
 
-                <a
-                    href="product-details.html"
-                    class="product-image">
-
-                    <img
-                        src="images/zyacoimg (6).jpeg"
-                        alt="Zyaco Foods Premium Rice Family Pack 2Kg"
-                        loading="lazy">
-
-                </a>
-
             </div>
 
+        </div>
+
+
+
+        <!-- Product -->
+
+        <div class="product-card">
+
+            <span class="badge">HOT</span>
+
+            <div class="product-image">
+
+                <img src="images/rice500g.jpeg" alt="">
+
+            </div>
 
             <div class="product-content">
 
-                <span class="product-category">
-                    Zyaco Foods
-                </span>
+                <span class="category">Zyaco Foods</span>
 
-                <a
-                    href="product-details.html"
-                    class="product-name">
+                <h3>Nakonde Premium Rice 500g</h3>
 
-                    Premium Rice Family Pack 2Kg
+                <div class="rating">
 
-                </a>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
 
-
-                <div class="product-rating">
-
-                    <div class="stars" aria-label="4 out of 5 stars">
-
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-
-                    </div>
-
-                    <span class="review-count">
-                        96
-                    </span>
+                    <span>(401)</span>
 
                 </div>
 
+                <div class="price">
 
-                <div class="product-footer">
+                    <span class="new-price">$45</span>
 
-                    <div class="product-price">
-
-                        <span class="current-price">
-                            K120
-                        </span>
-
-                        <span class="previous-price">
-                            K145
-                        </span>
-
-                    </div>
-
-
-                    <button
-                        class="add-to-cart"
-                        type="button"
-                        data-product-id="premium-rice-family-2kg"
-                        aria-label="Add Premium Rice Family Pack to cart" title="Add to Card">
-
-                        <i class="fas fa-shopping-cart"></i>
-
-                        <span>Add to Cart</span>
-
-                    </button>
+                    <span class="old-price">$59</span>
 
                 </div>
 
-            </div>
+                <button class="cart-btn">
 
-        </article>
+                    <i class="fas fa-shopping-cart"></i>
 
-
-        <!-- PRODUCT 3 -->
-        <article class="product-card">
-
-            <div class="product-media">
-
-                <span class="product-badge hot">
-                    HOT
-                </span>
-
-                <button
-                    class="product-wishlist"
-                    type="button"
-                    aria-label="Add Nakonde Premium Rice to wishlist">
-
-                    <i class="far fa-heart"></i>
+                    Add to Cart
 
                 </button>
 
-                <a
-                    href="product-details.html"
-                    class="product-image">
-
-                    <img
-                        src="images/rice500g.jpeg"
-                        alt="Nakonde Premium Rice 500g"
-                        loading="lazy">
-
-                </a>
-
             </div>
 
+        </div>
+
+         <!-- Product -->
+
+        <div class="product-card">
+
+            <span class="badge">NEW</span>
+
+            <div class="product-image">
+
+                <img src="images/originalcabbage.jpg" alt="">
+
+            </div>
 
             <div class="product-content">
 
-                <span class="product-category">
-                    Zyaco Foods
-                </span>
+                <span class="category">Vegetables</span>
 
-                <a
-                    href="product-details.html"
-                    class="product-name">
+                <h3>Cabbage</h3>
 
-                    Nakonde Premium Rice 500g
+                <div class="rating">
 
-                </a>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
 
-
-                <div class="product-rating">
-
-                    <div class="stars" aria-label="5 out of 5 stars">
-
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-
-                    </div>
-
-                    <span class="review-count">
-                        401
-                    </span>
+                    <span>(96)</span>
 
                 </div>
 
+                <div class="price">
 
-                <div class="product-footer">
+                    <span class="new-price">$120</span>
 
-                    <div class="product-price">
-
-                        <span class="current-price">
-                            K45
-                        </span>
-
-                        <span class="previous-price">
-                            K59
-                        </span>
-
-                    </div>
-
-
-                    <button
-                        class="add-to-cart"
-                        type="button"
-                        data-product-id="nakonde-rice-500g"
-                        aria-label="Add Nakonde Premium Rice to cart">
-
-                        <i class="fas fa-shopping-cart"></i>
-
-                        <span>Add to Cart</span>
-
-                    </button>
+                    <span class="old-price">$145</span>
 
                 </div>
 
-            </div>
+                <button class="cart-btn">
 
-        </article>
+                    <i class="fas fa-shopping-cart"></i>
 
-
-        <!-- PRODUCT 4 -->
-        <article class="product-card">
-
-            <div class="product-media">
-
-                <span class="product-badge new">
-                    NEW
-                </span>
-
-                <button
-                    class="product-wishlist"
-                    type="button"
-                    aria-label="Add Fresh Cabbage to wishlist">
-
-                    <i class="far fa-heart"></i>
+                    Add to Cart
 
                 </button>
 
-                <a
-                    href="product-details.html"
-                    class="product-image">
-
-                    <img
-                        src="images/originalcabbage.jpg"
-                        alt="Fresh cabbage"
-                        loading="lazy">
-
-                </a>
-
             </div>
 
+        </div>
+
+
+        <!-- Product -->
+
+        <div class="product-card">
+
+            <span class="badge">SALE</span>
+
+            <div class="product-image">
+
+                <img src="images/white-jasmine-rice-wooden-bowl-with-paddy-rice-isolated-white-background_252965-471.avif" alt="">
+
+            </div>
 
             <div class="product-content">
 
-                <span class="product-category">
-                    Vegetables
-                </span>
+                <span class="category">Cereals</span>
 
-                <a
-                    href="product-details.html"
-                    class="product-name">
+                <h3>Premium Nakonde Rice</h3>
 
-                    Fresh Cabbage
+                <div class="rating">
 
-                </a>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
 
-
-                <div class="product-rating">
-
-                    <div class="stars" aria-label="4 out of 5 stars">
-
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-
-                    </div>
-
-                    <span class="review-count">
-                        96
-                    </span>
+                    <span>(158)</span>
 
                 </div>
 
+                <div class="price">
 
-                <div class="product-footer">
+                    <span class="new-price">$189</span>
 
-                    <div class="product-price">
-
-                        <span class="current-price">
-                            K15
-                        </span>
-
-                        <span class="previous-price">
-                            K20
-                        </span>
-
-                    </div>
-
-
-                    <button
-                        class="add-to-cart"
-                        type="button"
-                        data-product-id="fresh-cabbage"
-                        aria-label="Add Fresh Cabbage to cart">
-
-                        <i class="fas fa-shopping-cart"></i>
-
-                        <span>Add to Cart</span>
-
-                    </button>
+                    <span class="old-price">$240</span>
 
                 </div>
 
-            </div>
+                <button class="cart-btn">
 
-        </article>
+                    <i class="fas fa-shopping-cart"></i>
 
-
-        <!-- PRODUCT 5 -->
-        <article class="product-card">
-
-            <div class="product-media">
-
-                <span class="product-badge sale">
-                    SALE
-                </span>
-
-                <button
-                    class="product-wishlist"
-                    type="button"
-                    aria-label="Add Premium Nakonde Rice to wishlist">
-
-                    <i class="far fa-heart"></i>
+                    Add to Cart
 
                 </button>
 
-                <a
-                    href="product-details.html"
-                    class="product-image">
-
-                    <img
-                        src="images/white-jasmine-rice-wooden-bowl-with-paddy-rice-isolated-white-background_252965-471.avif"
-                        alt="Premium Nakonde Rice"
-                        loading="lazy">
-
-                </a>
-
             </div>
 
+        </div>
+
+
+        <!-- Product -->
+
+        <div class="product-card">
+
+            <span class="badge">In stock</span>
+
+            <div class="product-image">
+
+                <img src="images/dryBeans.webp" alt="">
+
+            </div>
 
             <div class="product-content">
 
-                <span class="product-category">
-                    Cereals
-                </span>
+                <span class="category">Cereals</span>
 
-                <a
-                    href="product-details.html"
-                    class="product-name">
+                <h3>Dry Kabulangeti Beans</h3>
 
-                    Premium Nakonde Rice
+                <div class="rating">
 
-                </a>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
 
-
-                <div class="product-rating">
-
-                    <div class="stars" aria-label="4.5 out of 5 stars">
-
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-
-                    </div>
-
-                    <span class="review-count">
-                        158
-                    </span>
+                    <span>(158)</span>
 
                 </div>
 
+                <div class="price">
 
-                <div class="product-footer">
+                    <span class="new-price">$189</span>
 
-                    <div class="product-price">
+                    <span class="old-price">$240</span>
 
-                        <span class="current-price">
-                            K189
-                        </span>
-
-                        <span class="previous-price">
-                            K240
-                        </span>
-
-                    </div>
-
-
-                    <button
-                        class="add-to-cart"
-                        type="button"
-                        data-product-id="premium-nakonde-rice"
-                        aria-label="Add Premium Nakonde Rice to cart">
-
-                        <i class="fas fa-shopping-cart"></i>
-
-                        <span>Add to Cart</span>
-
-                    </button>
+                    <span class="unit">per meda</span>
 
                 </div>
 
-            </div>
+                <button class="cart-btn">
 
-        </article>
+                    <i class="fas fa-shopping-cart"></i>
 
-
-        <!-- PRODUCT 6 -->
-        <article class="product-card">
-
-            <div class="product-media">
-
-                <span class="product-badge stock">
-                    IN STOCK
-                </span>
-
-                <button
-                    class="product-wishlist"
-                    type="button"
-                    aria-label="Add Dry Kabulangeti Beans to wishlist">
-
-                    <i class="far fa-heart"></i>
+                    Add to Cart
 
                 </button>
-
-                <a
-                    href="product-details.html"
-                    class="product-image">
-
-                    <img
-                        src="images/dryBeans.webp"
-                        alt="Dry Kabulangeti Beans"
-                        loading="lazy">
-
-                </a>
-
-            </div>
-
-
-            <div class="product-content">
-
-                <span class="product-category">
-                    Cereals
-                </span>
-
-                <a
-                    href="product-details.html"
-                    class="product-name">
-
-                    Dry Kabulangeti Beans
-
-                </a>
-
-
-                <div class="product-rating">
-
-                    <div class="stars" aria-label="4.5 out of 5 stars">
-
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                        <i class="far fa-star"></i>
-
-                    </div>
-
-                    <span class="review-count">
-                        158
-                    </span>
-
-                </div>
-
-
-                <div class="product-footer">
-
-                    <div class="product-price">
-
-                        <span class="current-price">
-                            K189
-                        </span>
-
-                        <span class="previous-price">
-                            K240
-                        </span>
-
-                    </div>
-
-
-                    <button
-                        class="add-to-cart"
-                        type="button"
-                        data-product-id="dry-kabulangeti-beans"
-                        aria-label="Add Dry Kabulangeti Beans to cart">
-
-                        <i class="fas fa-shopping-cart"></i>
-
-                        <span>Add to Cart</span>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-         <!-- PRODUCT 7 -->
-        <article class="product-card">
-
-            <div class="product-media">
-
-                <span class="product-badge sale">
-                    -20%
-                </span>
-
-                <button
-                    class="product-wishlist"
-                    type="button"
-                    aria-label="Add Cooking Oil 2L to wishlist">
-
-                    <i class="far fa-heart"></i>
-
-                </button>
-
-                <a
-                    href="product-details.html"
-                    class="product-image">
-
-                    <img
-                        src="images/suprcarrots.avif"
-                        alt="Carrot"
-                        loading="lazy">
-
-                </a>
-
-            </div>
-
-
-            <div class="product-content">
-
-                <span class="product-category">
-                    Carrots
-                </span>
-
-                <a
-                    href="product-details.html"
-                    class="product-name">
-
-                    Carrots
-
-                </a>
-
-
-                <div class="product-rating">
-
-                    <div class="stars" aria-label="4.5 out of 5 stars">
-
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-
-                    </div>
-
-                    <span class="review-count">
-                        214
-                    </span>
-
-                </div>
-
-
-                <div class="product-footer">
-
-                    <div class="product-price">
-
-                        <span class="current-price">
-                            K25
-                        </span>
-
-                        <span class="previous-price">
-                            K35
-                        </span>
-
-                    </div>
-
-
-                    <button
-                        class="add-to-cart"
-                        type="button"
-                        data-product-id="cooking-oil-2l"
-                        aria-label="Add Cooking Oil 2L to cart">
-
-                        <i class="fas fa-shopping-cart"></i>
-
-                        <span>Add to Cart</span>
-
-                    </button>
-
-                </div>
-
-            </div>
-
-        </article>
-
-
-
-
-    </div>
-
-
-    <!-- MOBILE / BOTTOM CTA -->
-    <div class="featured-bottom">
-
-        <a href="shop.html" class="featured-shop-button">
-
-            Browse All Products
-
-            <i class="fas fa-arrow-right"></i>
-
-        </a>
-
-    </div>
-
-</div>
-
-
-</section>
-
-<!--==================================
-        PROMOTIONAL CAMPAIGN
-===================================-->
-
-<section class="promo-section">
-
-    <div class="container">
-
-        <div class="promo-banner">
-
-            <div class="promo-banner-image">
-
-                <img
-                    src="images/zyacoimg (11).jpeg"
-                    alt="Zyaco Foods special promotion"
-                    loading="lazy"
-                >
-
-            </div>
-
-
-            <div class="promo-content">
-
-                <span class="promo-label">
-                    Limited Time Offer
-                </span>
-
-
-                <h2>
-                    Better Food.
-                    <br>
-                    <span class="better-value">Better Value.</span>
-                </h2>
-
-
-                <p>
-                    Discover selected Zyaco Foods products at
-                    exceptional prices. Shop quality essentials
-                    for your home or business while the offer lasts.
-                </p>
-
-
-                <div class="promo-actions">
-
-                    <a href="#" class="promo-primary">
-                        Shop the Offer
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-
-
-                    <a href="#" class="promo-secondary">
-                        View All Deals
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <div class="promo-offer">
-
-                <strong>
-                    SAVE
-                </strong>
-
-                <span>
-                    Today
-                </span>
 
             </div>
 
@@ -986,7 +421,8 @@ FEATURED PRODUCTS
 </section>
 
 </main>
-<script src="CURRENTJS/currentHeader.js"></script>
-<script src="CURRENTJS/currentHero.js"></script>
+
+
+
 </body>
 </html>
