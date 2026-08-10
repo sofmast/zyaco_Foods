@@ -23,7 +23,6 @@ padding: 100px 0;
 background: #ffffff;
 font-family:var(--font-heading);
 
-
 }
 
 .featured-container {
@@ -60,6 +59,13 @@ font-family: var(--font-body);
 max-width: 650px;
 
 
+}
+
+.section-heading-content .h2{
+    font-family: var(--font-body);
+    font-size: 1.3rem;
+    color: #727171;
+    text-align: center;
 }
 
 .section-eyebrow {
@@ -212,7 +218,7 @@ background: #ffffff;
 
 border: 1px solid #eeeeee;
 
-border-radius: 5px;
+border-radius: 16px;
 
 overflow: hidden;
 
@@ -900,6 +906,8 @@ MOBILE
 .featured-products {
 
     padding: 65px 0;
+
+    margin-top: 50px;
 
 }
 
